@@ -11,16 +11,17 @@ class Solution(object):
         for num in nums: 
             # if even
             if num % 2 > 0: 
+                # if previous num was even return false 
                 if status == 0: 
                     return False
                 else: 
                     status = 0 
-            # if even
+            # if odd
             else:
+                # if previous num was even return false 
                 if status == 1: 
                     return False
                 else: 
-                    status = 1 
-            
+                    status = 1  
         return True
         
